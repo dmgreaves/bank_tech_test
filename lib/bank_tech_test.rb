@@ -7,7 +7,11 @@ class Bank_account
   end
 
   def balance
-    INITIAL_BALANCE
+    @balance
+  end
+
+  def add(amount)
+    @balance += amount
   end
 
 end
