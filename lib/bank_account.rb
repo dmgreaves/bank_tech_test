@@ -27,5 +27,15 @@ class Bank_account
     @statement.transaction_history.reverse
   end
 
+  def print_statement
+      puts "#{Time.now.strftime("%d/%m/%Y")} || credit || debit || Current Balance: #{@balance}"
+      @statement.transaction_history.each do |transaction|
+        if transaction > 0
+          puts "               #{transaction}  ||       || "
+        elsif transaction < 0
+          puts "                     ||  #{transaction}  || "
+        end
+      end
+    end
 
 end

@@ -32,5 +32,17 @@ it 'expects transaction history to display the most recent transaction first' do
   expect(account.transaction_history).to eq [-750, -250, 500, 1000, 0]
 end
 
+it 'shows transaction history for the customer including debits and credits for multiple transactions' do
+  account = Bank_account.new
+  account.deposit(1000)
+  account.deposit(500)
+  account.withdraw(250)
+  account.withdraw(750)
+  account.deposit(5000)
+  account.withdraw(1250)
+  expect(account.transaction_history).to eq [-1250, 5000, -750, -250, 500, 1000, 0]
+  expect(account.current_balance).to eq 4250
+end
+
 
 end
