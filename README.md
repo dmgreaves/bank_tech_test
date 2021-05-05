@@ -1,6 +1,6 @@
 # Bank tech test
 
-## How to use in irb (REPL)
+## How to run in irb (REPL)
 
 ```
 
@@ -23,6 +23,8 @@
 * Run rspec in the terminal to run tests
 * All tests currently pass
 
+
+## Specifications
 
 ### Bank tech test: Requirements
 
