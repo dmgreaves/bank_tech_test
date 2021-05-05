@@ -6,7 +6,7 @@ class Bank_account
     @balance = balance
   end
 
-  def balance
+  def current_balance
     @balance
   end
 
