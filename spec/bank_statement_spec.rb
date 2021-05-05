@@ -11,7 +11,7 @@ end
 it 'prints bank account last transaction and balance adjustment after deposit of 100' do
   account = Bank_account.new
   account.deposit(100)
-  expect(account.print_statement).to eq [100]
+  expect(account.print_statement).to eq [0, 100]
   expect(account.current_balance).to eq 100
 end
 
@@ -19,7 +19,7 @@ it 'prints bank account last transaction and balance adjustment after withdrawal
   account = Bank_account.new
   account.deposit(500)
   account.withdraw(100)
-  expect(account.print_statement).to eq [-100]
+  expect(account.print_statement).to eq [0, 500, -100]
   expect(account.current_balance).to eq 400
 end
 

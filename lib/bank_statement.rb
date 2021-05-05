@@ -13,7 +13,7 @@ class Bank_statement
   end
 
   def addto_statement_transaction_history(amount)
-    @transaction_history = [amount]
+    @transaction_history << amount
   end
 
 
