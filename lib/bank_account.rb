@@ -20,6 +20,7 @@ class Bank_account
 
   def withdraw(amount)
     @balance -= amount
+    @statement.addto_statement_transaction_history(-amount)
   end
 
   def print_statement
