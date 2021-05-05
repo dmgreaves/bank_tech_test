@@ -23,8 +23,9 @@ class Bank_account
     @statement.addto_statement_transaction_history(-amount)
   end
 
-  def print_statement
-    @statement.transaction_history
+  def transaction_history
+    @statement.transaction_history.reverse
   end
+
 
 end
