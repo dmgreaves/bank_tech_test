@@ -1,9 +1,9 @@
-require_relative 'bank_tech_test'
+require_relative 'bank_account'
 
 class Bank_statement
 
   def initialize()
-    @transaction_history = []
+    @transaction_history = [0]
   end
 
 

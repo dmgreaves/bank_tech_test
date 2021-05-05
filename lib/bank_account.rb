@@ -1,4 +1,4 @@
-require_relative 'Bank_statement_class'
+require_relative 'bank_statement'
 
 class Bank_account
 

@@ -1,4 +1,4 @@
-require 'bank_tech_test'
+require 'bank_account'
 
 describe Bank_account do
   it 'returns the new account balance with an initial balance of 0' do
